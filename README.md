@@ -8,4 +8,5 @@ https://youtu.be/AwFTKWNfwN0
 
 Reference (Thank you): 
 https://github.com/venetasoft/Xamarin.CameraX
+
 https://github.com/maxvodoo/AccTest
