@@ -1,6 +1,11 @@
-# Xamarin.CameraX
-Google's Android sample 'Getting Started with CameraX' ported to C# (Xamarin.Android)
+Xamarin.Android CameraX + Scan Barcodes with ML Kit on Android
 
-Porting from https://codelabs.developers.google.com/codelabs/camerax-getting-started#0
+1. Source  
+https://github.com/pulmuone/CameraXMLVisionBarcode
 
-EDIT from Google's sample: photos are saved to /Pictures/CameraX (more confortable than using ADB to see them)
+2. Sample video 
+https://youtu.be/AwFTKWNfwN0
+
+Reference (Thank you): 
+https://github.com/venetasoft/Xamarin.CameraX
+https://github.com/maxvodoo/AccTest
