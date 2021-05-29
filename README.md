@@ -1,7 +1,7 @@
 Xamarin.Android CameraX + Scan Barcodes with ML Kit on Android
 
 1. Source  
-2. 
+
 https://github.com/pulmuone/CameraXMLVisionBarcode
 
 2. Sample video
