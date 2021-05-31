@@ -103,8 +103,9 @@ namespace CameraX
                 var cameraProvider = (ProcessCameraProvider)cameraProviderFuture.Get();
 
                 // Preview
-                var preview = new Preview.Builder().Build();                
-                preview.SetSurfaceProvider(viewFinder.CreateSurfaceProvider());
+                var preview = new Preview.Builder().Build();
+                //preview.SetSurfaceProvider(viewFinder.CreateSurfaceProvider());
+                preview.SetSurfaceProvider(viewFinder.SurfaceProvider);
 
                 // Take Photo
                 this.imageCapture = new ImageCapture.Builder().Build();
