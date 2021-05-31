@@ -15,6 +15,7 @@ using Java.Lang;
 using Java.Util;
 using Java.Util.Concurrent;
 using System.Linq;
+using static AndroidX.Camera.View.PreviewView;
 
 namespace CameraX
 {
@@ -48,6 +49,9 @@ namespace CameraX
             this.textView = this.FindViewById<TextView>(Resource.Id.textView1);
             var camera_capture_button = this.FindViewById<Button>(Resource.Id.camera_capture_button);
             camera_capture_button.Visibility = Android.Views.ViewStates.Invisible;
+
+            //System.Console.WriteLine(viewFinder.GetImplementationMode());
+            viewFinder.SetImplementationMode(ImplementationMode.Performance); //SurfaceView, 기본값.
 
             // Request camera permissions   
             string[] permissions = new string[] { Manifest.Permission.Camera, Manifest.Permission.WriteExternalStorage };
@@ -144,7 +148,7 @@ namespace CameraX
                     var camera = cameraProvider.BindToLifecycle(this, cameraSelector, preview, imageCapture, imageAnalyzer);
 
                     //Flash On
-                    camera.CameraControl.EnableTorch(true);
+                    //camera.CameraControl.EnableTorch(true);
 
                     //화면 확대
                     //camera.CameraControl.SetZoomRatio(10.0F);
