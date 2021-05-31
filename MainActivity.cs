@@ -141,7 +141,14 @@ namespace CameraX
                     cameraProvider.UnbindAll();
 
                     // Bind use cases to camera
-                    cameraProvider.BindToLifecycle(this, cameraSelector, preview, imageCapture, imageAnalyzer);
+                    var camera = cameraProvider.BindToLifecycle(this, cameraSelector, preview, imageCapture, imageAnalyzer);
+
+                    //Flash On
+                    camera.CameraControl.EnableTorch(true);
+
+                    //화면 확대
+                    //camera.CameraControl.SetZoomRatio(10.0F);
+                    //camera.CameraControl.SetLinearZoom(10.0f);
                 }
                 catch (Exception exc)
                 {
